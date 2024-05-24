@@ -8,10 +8,12 @@ import {TbBrandMinecraft} from "react-icons/tb";
 import {useSideBarState, SideBarStateInterface} from "./SidebarStateProvider";
 import Image from "next/image";
 import Link from "next/link";
+import {useRouter} from "next/navigation";
 
 
 
 const SideBar=() => {
+    const router = useRouter();
     const {setState} = useSideBarState();
     const {state} = useSideBarState();
     const [tutorialsCollapsed, setTutCollapsed] = React.useState(true);
@@ -33,7 +35,8 @@ const SideBar=() => {
                 <Image className={"sidebar-logo"} src={"/images/icon.png"} width={100}height={100} alt="logo"/>
                 <div className={"sidebar-title"}>Modding with Nyfaria</div>
                 <div className={"line-1"}></div>
-                <div className={"sidebar-option"} onClick={goHome}>
+                <div className={"sidebar-option"}
+                     onClick={() => router.push("/")}>
                     <FaHome/>Home
                 </div>
                 <div className={tutorialsCollapsed ? "sidebar-tutorials-close" : "sidebar-tutorials-open"}>
@@ -42,11 +45,11 @@ const SideBar=() => {
                         <BiSolidDownArrow className={"float-right"}/>}
                     </div>
                     <div className={!tutorialsCollapsed ? "sidebar-sub-option sidebar-option-hover" : "collapsed"}
-                         onClick={goOneTwelve}
+                         onClick={() => router.push("/1_12_2_modding_tutorials")}
                          id={"sidebar-tutorials"}>1.12.2 Modding
                     </div>
                     <div className={!tutorialsCollapsed ? "sidebar-sub-option" : "collapsed"}
-                            onClick={goOneTwenty}
+                         onClick={() => router.push("/1_20_modding_tutorials")}
                          id={"sidebar-tutorials"}>1.20.1 Modding
                     </div>
                 </div>
@@ -57,14 +60,12 @@ const SideBar=() => {
                         <BiSolidUpArrow className={"float-right"}/> :
                         <BiSolidDownArrow className={"float-right"}/>}
                     </div>
-                    <Link href={"/solo_projects"}>
                     <div className={!projectsCollapsed ? "sidebar-sub-option sidebar-option-hover" : "collapsed"}
-                         onClick={goSolo}
+                         onClick={() => router.push("/solo_projects")}
                          id={"sidebar-tutorials"}>Solo/Collab Projects
                     </div>
-                    </Link>
                     <div className={!projectsCollapsed ? "sidebar-sub-option" : "collapsed"}
-                         onClick={goTeam}
+                         onClick={() => router.push("/group_projects")}
                          id={"sidebar-tutorials"}> Team Projects
                     </div>
                 </div>
