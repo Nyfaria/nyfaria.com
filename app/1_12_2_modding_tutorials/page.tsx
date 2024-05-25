@@ -9,7 +9,7 @@ const Page = () => {
             <h2>1.12.2 Modding Tutorials</h2>
             <div className={"home-desc"}>
                 <p>Stop modding for ancient versions that are dying out contrary to unpopular opinions.</p>
-                <p>Now go mod for 1.20+ and you'll get people to actually play your mods.</p>
+                <p>Now go mod for 1.20+ and you&apos;ll get people to actually play your mods.</p>
             </div>
         </div>
     );

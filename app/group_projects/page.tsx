@@ -35,7 +35,7 @@ const Page = ()=> {
         <div className={state.collapsed ? "home-open" : "home-close"}>
             <h2> Team Projects</h2>
 
-            <div className="project-list">
+            <div className={state.collapsed ? "project-list-open" : "project-list-closed"}>
                 {
                     projects.map(
                         (value: FullData) => {

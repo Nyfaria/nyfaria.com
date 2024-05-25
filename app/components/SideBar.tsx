@@ -32,7 +32,7 @@ const SideBar=() => {
     return (
         <div className="App">
             <div className={state.collapsed ? "sidebar-open" : "collapsed"}>
-                <Image className={"sidebar-logo"} src={"/images/icon.png"} width={100}height={100} alt="logo"/>
+                <Image unoptimized className={"sidebar-logo"} src={"/images/icon.png"} width={100}height={100} alt="logo"/>
                 <div className={"sidebar-title"}>Modding with Nyfaria</div>
                 <div className={"line-1"}></div>
                 <div className={"sidebar-option"}
@@ -71,19 +71,19 @@ const SideBar=() => {
                 </div>
                 <div className={"socials"}>
                     <a className={"link"} target={"_blank"} href={"https://discord.gg/WbNYM68Bkt"}>
-                        <Image className={"social"} id={"discord"}
+                        <Image unoptimized className={"social"} id={"discord"}
                                width={40} height={40}
                              src={'/images/discord_icon.png'} alt={"discord"}/>
                     </a>
 
                     <a className="link" target="_blank" href="https://twitter.com/TheNyfaria">
-                        <Image className="social" id="twitter" alt={"twitter"}
+                        <Image unoptimized className="social" id="twitter" alt={"twitter"}
                                width={40} height={40}
                              src={"/images/twitter_icon.png"}/>
                     </a>
 
                     <a className="link" target="_blank" href="https://github.com/Nyfaria">
-                        <Image className="social" id="github" alt={"github"}
+                        <Image unoptimized className="social" id="github" alt={"github"}
                                width={40} height={40}
                              src={"/images/github_icon.png"}/>
                     </a>
