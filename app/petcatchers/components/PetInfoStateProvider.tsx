@@ -4,44 +4,44 @@ import {PetInfo} from "@/app/data/PetData";
 
 
 const PetInfoStateContext1 = createContext({
-    state1: {} as Partial<PetInfo>,
-    setState1: {} as Dispatch<SetStateAction<Partial<PetInfo>>>,
+    state1: {} as PetInfo,
+    setState1: {} as Dispatch<SetStateAction<PetInfo>>,
 });
 
 const PetInfoStateContext2 = createContext({
-    state2: {} as Partial<PetInfo>,
-    setState2: {} as Dispatch<SetStateAction<Partial<PetInfo>>>,
+    state2: {} as PetInfo,
+    setState2: {} as Dispatch<SetStateAction<PetInfo>>,
 });
 const PetInfoStateContext3 = createContext({
-    state3: {} as Partial<PetInfo>,
-    setState3: {} as Dispatch<SetStateAction<Partial<PetInfo>>>,
+    state3: {} as PetInfo,
+    setState3: {} as Dispatch<SetStateAction<PetInfo>>,
 });
 const PetInfoStateContext4 = createContext({
-    state4: {} as Partial<PetInfo>,
-    setState4: {} as Dispatch<SetStateAction<Partial<PetInfo>>>,
+    state4: {} as PetInfo,
+    setState4: {} as Dispatch<SetStateAction<PetInfo>>,
 });
 const PetInfoStateContext5 = createContext({
-    state5: {} as Partial<PetInfo>,
-    setState5: {} as Dispatch<SetStateAction<Partial<PetInfo>>>,
+    state5: {} as PetInfo,
+    setState5: {} as Dispatch<SetStateAction<PetInfo>>,
 });
 const PetInfoStateContext6 = createContext({
-    state6: {} as Partial<PetInfo>,
-    setState6: {} as Dispatch<SetStateAction<Partial<PetInfo>>>,
+    state6: {} as PetInfo,
+    setState6: {} as Dispatch<SetStateAction<PetInfo>>,
 });
 const PetInfoStateContext7 = createContext({
-    state7: {} as Partial<PetInfo>,
-    setState7: {} as Dispatch<SetStateAction<Partial<PetInfo>>>,
+    state7: {} as PetInfo,
+    setState7: {} as Dispatch<SetStateAction<PetInfo>>,
 });
 const PetInfoStateContext8 = createContext({
-    state8: {} as Partial<PetInfo>,
-    setState8: {} as Dispatch<SetStateAction<Partial<PetInfo>>>,
+    state8: {} as PetInfo,
+    setState8: {} as Dispatch<SetStateAction<PetInfo>>,
 });
 
 const PetInfoStateProvider = ({
                                   children, value = {pet: {}, rune1: {}, rune1Level: {},rune2:{}, rune2Level: {}, rune3: {}, rune3Level: {}, level: 1} as PetInfo,
                               }: {
     children: React.ReactNode;
-    value?: Partial<PetInfo>;
+    value: PetInfo;
 }) => {
     const [state1, setState1] = useState(value);
     const [state2, setState2] = useState(value);

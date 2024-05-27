@@ -1,6 +1,6 @@
 .pet-info-bar {
     width: 70vw;
-    background-color: darkorchid;
+    background-color: #312248;
     border: 1px solid white;
     border-collapse: collapse;
     -webkit-user-select: none; /* Safari */
@@ -8,7 +8,7 @@
     -ms-user-select: none; /* IE10+/Edge */
     user-select: none; /* Standard */
     display: grid;
-    grid-template-columns: 5% 4% 22% 8% 3% 8% 3% 8% 3% 9% 9% 9% 9%;
+    grid-template-columns: 5% 5% 20% 10% 4% 10% 4% 10% 4% 7% 7% 7% 7%;
     text-align: center;
 }
 .pet-info-lvl{
@@ -21,11 +21,11 @@
 }
 .pet-info-row {
     width: 70vw;
-    background-color: darkslategray;
+    background-color: #13111A;
     border: 1px solid white;
     border-collapse: collapse;
     display: grid;
-    grid-template-columns: 5% 4% 22% 8% 3% 8% 3% 8% 3% 9% 9% 9% 9%;
+    grid-template-columns: 5% 5% 20% 10% 4% 10% 4% 10% 4% 7% 7% 7% 7%;
     text-align: center;
 }
 
@@ -85,7 +85,6 @@
     -moz-user-select: none; /* Firefox */
     -ms-user-select: none; /* IE10+/Edge */
     user-select: none; /* Standard */
-    user-select: none; /* Standard */
 }
 .dropdown {
     position: absolute;
@@ -98,7 +97,7 @@
 .dropdown-selection {
     margin: auto;
     width: 100%;
-    background-color: darkslategray;
+    background-color: #13111A;
     cursor: pointer;
 }
 .dropdown-selected {
@@ -111,4 +110,9 @@
 .pet-info-row-damage {
     float: left;
     border: inherit;
+}
+.pet-data-panel {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
 }

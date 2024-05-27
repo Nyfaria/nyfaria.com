@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import data from '../../data/pet_data.json';
 import {PetData} from "@/app/data/PetData";
 import "../petcatchers.css";
+import {IoMdArrowDropdown} from "react-icons/io";
 
 type DropDownProps = {
     pets: PetData[];

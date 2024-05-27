@@ -8,12 +8,11 @@ import RuneDropDown from "@/app/petcatchers/components/RuneDropDown";
 import numerals from "../../data/roman_numerals.json";
 import RuneLevelDropDown from "@/app/petcatchers/components/RuneLevelDropDown";
 import NumberDropDown from "@/app/petcatchers/components/NumberDropDown";
+import {IoMdArrowDropdown, IoMdArrowDropup, IoMdArrowUp} from "react-icons/io";
 
 interface PetInfoDisplayProps {
-    petDataSelection: Function;
-    runeData1Selection: Function;
-    runeData2Selection: Function;
-    runeData3Selection: Function;
+    state: Function;
+    petInfoSelection: Function;
 }
 
 const PetInfoDisplay: React.FC<PetInfoDisplayProps> = (props): JSX.Element => {
@@ -90,7 +89,20 @@ const PetInfoDisplay: React.FC<PetInfoDisplayProps> = (props): JSX.Element => {
     }
     const getRunes = () => {
         let dataList: RuneData[] = [];
-        dataList.push({ name: "None", type: "None", I: 0, II: 0, III: 0, IV: 0, V: 0, VI: 0, VII: 0, VIII: 0, IX: 0, X: 0 } as RuneData);
+        dataList.push({
+            name: "None",
+            type: "None",
+            I: 0,
+            II: 0,
+            III: 0,
+            IV: 0,
+            V: 0,
+            VI: 0,
+            VII: 0,
+            VIII: 0,
+            IX: 0,
+            X: 0
+        } as RuneData);
         for (let i = 0; i < runes.runes.length; i++) {
             dataList.push(runes.runes[i] as RuneData);
         }
@@ -158,48 +170,59 @@ const PetInfoDisplay: React.FC<PetInfoDisplayProps> = (props): JSX.Element => {
             ...current,
             pet: petData,
         }));
-        props.petDataSelection(petData);
+        props.petInfoSelection(props.state, 'pet', petData);
     };
+    const setShinyData = (shiny: boolean): void => {
+        setSelectedData(current => ({
+            ...current,
+            shiny: shiny,
+        }));
+        props.petInfoSelection(props.state, 'shiny', shiny);
+    }
     const rune1Selection = (runeData: RuneData): void => {
         setSelectedData(current => ({
             ...current,
             rune1: runeData,
         }));
-        props.runeData1Selection(runeData);
+        props.petInfoSelection(props.state, 'rune1', runeData);
     };
     const rune2Selection = (runeData: RuneData): void => {
         setSelectedData(current => ({
             ...current,
             rune2: runeData,
         }));
-        props.runeData2Selection(runeData);
+        props.petInfoSelection(props.state, 'rune2', runeData);
     };
     const rune3Selection = (runeData: RuneData): void => {
         setSelectedData(current => ({
             ...current,
             rune3: runeData,
         }));
-        props.runeData3Selection(runeData);
+        props.petInfoSelection(props.state, 'rune3', runeData);
     };
     const rune1LevelSelection = (runeLevel: RomanNumeral): void => {
         setSelectedData(current => ({
             ...current, rune1Level: runeLevel,
         }));
+        props.petInfoSelection(props.state, 'rune1Level', runeLevel);
     }
     const rune2LevelSelection = (runeLevel: RomanNumeral): void => {
         setSelectedData(current => ({
             ...current, rune2Level: runeLevel,
         }));
+        props.petInfoSelection(props.state, 'rune2Level', runeLevel);
     }
     const rune3LevelSelection = (runeLevel: RomanNumeral): void => {
         setSelectedData(current => ({
             ...current, rune3Level: runeLevel,
         }));
+        props.petInfoSelection(props.state, 'rune3Level', runeLevel);
     }
     const petLevelSelection = (level: number): void => {
         setSelectedData(current => ({
             ...current, level: level,
         }));
+        props.petInfoSelection(props.state, 'level', level);
     }
     const calculateDamage = (): number => {
         let damage = selectedData.pet.Damage;
@@ -556,7 +579,7 @@ const PetInfoDisplay: React.FC<PetInfoDisplayProps> = (props): JSX.Element => {
             let blahBlah = shells * (1 / 24);
             shells += blah * blahBlah;
         }
-        if(isShiny){
+        if (isShiny) {
             shells *= 2;
         }
         return Math.round(shells) as number;
@@ -579,14 +602,22 @@ const PetInfoDisplay: React.FC<PetInfoDisplayProps> = (props): JSX.Element => {
                 <div className={"pet-info-shells"}>Shells</div>
             </div>
             <div className={"pet-info-row"}>
-                <div className={"pet-info-row-shiny"}><input type={"checkbox"}
-                                                             checked={isShiny}
-                                                             onChange={(): void => setIsShiny(!isShiny)}
+                <div className={"pet-info-row-shiny"}><input
+                    className={"shiny-checkbox"}
+                    type={"checkbox"}
+                    checked={isShiny}
+                    onChange={(): void => {
+                        setIsShiny(!isShiny)
+                        setShinyData(!isShiny)
+                    }
+                    }
                 /></div>
                 <div className={showPetLevelDD ? "pet-info-row-lvl active" : "pet-info-row-lvl"}
                      onClick={(): void => togglePetLevelDD()}
                 >
-                    <div className={"dropdown-selected"}>{selectedData.level}</div>
+                    <div className={"dropdown-selected"}>{selectedData.level}{!showDropDown ?
+                        <IoMdArrowDropdown size={26} className={"float-right"}/> :
+                        <IoMdArrowDropup size={26} className={"float-right"}/>}</div>
                     {showPetLevelDD && (
                         <NumberDropDown runes={getPetLevels()} runeSelection={petLevelSelection}
                                         showDropDown={false} toggleDropDown={togglePetLevelDD}/>
@@ -596,7 +627,9 @@ const PetInfoDisplay: React.FC<PetInfoDisplayProps> = (props): JSX.Element => {
                     className={showDropDown ? "petselector active" : "petselector"}
                     onClick={(): void => toggleDropDown()}
                 >
-                    <div className={"dropdown-selected"}>{selectedData.pet.Name} </div>
+                    <div className={"dropdown-selected"}>{selectedData.pet.Name} {!showDropDown ?
+                        <IoMdArrowDropdown size={26} className={"float-right"}/> :
+                        <IoMdArrowDropup size={26} className={"float-right"}/>}</div>
                     {showDropDown && (
                         <PetInfoDropDown pets={getPets()} showDropDown={false}
                                          toggleDropDown={(): void => toggleDropDown()}
@@ -606,7 +639,9 @@ const PetInfoDisplay: React.FC<PetInfoDisplayProps> = (props): JSX.Element => {
                 <div className={showRuneDropDown1 ? "pet-info-row-rune active" : "pet-info-row-rune"}
                      onClick={(): void => toggleRuneDropDown1()}
                 >
-                    <div className={"dropdown-selected"}>{selectedData.rune1.name}</div>
+                    <div className={"dropdown-selected"}>{selectedData.rune1.name}{!showDropDown ?
+                        <IoMdArrowDropdown size={26} className={"float-right"}/> :
+                        <IoMdArrowDropup size={26} className={"float-right"}/>}</div>
                     {showRuneDropDown1 && (
                         <RuneDropDown runes={getRunes()} showDropDown={false}
                                       toggleDropDown={(): void => toggleRuneDropDown1()}
@@ -616,7 +651,9 @@ const PetInfoDisplay: React.FC<PetInfoDisplayProps> = (props): JSX.Element => {
                 <div className={showRuneLevelDD1 ? "pet-info-row-lvl active" : "pet-info-row-rune"}
                      onClick={(): void => toggleRuneLevelDD1()}
                 >
-                    <div className={"dropdown-selected"}>{selectedData.rune1Level.name}</div>
+                    <div className={"dropdown-selected"}>{selectedData.rune1Level.name}{!showDropDown ?
+                        <IoMdArrowDropdown size={26} className={"float-right"}/> :
+                        <IoMdArrowDropup size={26} className={"float-right"}/>}</div>
                     {showRuneLevelDD1 && (
                         <RuneLevelDropDown runes={getNumerals()} runeSelection={rune1LevelSelection}
                                            showDropDown={false} toggleDropDown={toggleRuneLevelDD1}/>
@@ -625,7 +662,9 @@ const PetInfoDisplay: React.FC<PetInfoDisplayProps> = (props): JSX.Element => {
                 <div className={showRuneDropDown2 ? "pet-info-row-rune active" : "pet-info-row-rune"}
                      onClick={(): void => toggleRuneDropDown2()}
                 >
-                    <div className={"dropdown-selected"}>{selectedData.rune2.name}</div>
+                    <div className={"dropdown-selected"}>{selectedData.rune2.name}{!showDropDown ?
+                        <IoMdArrowDropdown size={26} className={"float-right"}/> :
+                        <IoMdArrowDropup size={26} className={"float-right"}/>}</div>
                     {showRuneDropDown2 && (
                         <RuneDropDown runes={getRunes()} showDropDown={false}
                                       toggleDropDown={(): void => toggleRuneDropDown2()}
@@ -635,7 +674,9 @@ const PetInfoDisplay: React.FC<PetInfoDisplayProps> = (props): JSX.Element => {
                 <div className={showRuneLevelDD2 ? "pet-info-row-lvl active" : "pet-info-row-rune"}
                      onClick={(): void => toggleRuneLevelDD2()}
                 >
-                    <div className={"dropdown-selected"}>{selectedData.rune2Level.name}</div>
+                    <div className={"dropdown-selected"}>{selectedData.rune2Level.name}{!showDropDown ?
+                        <IoMdArrowDropdown size={26} className={"float-right"}/> :
+                        <IoMdArrowDropup size={26} className={"float-right"}/>}</div>
                     {showRuneLevelDD2 && (
                         <RuneLevelDropDown runes={getNumerals()} runeSelection={rune2LevelSelection}
                                            showDropDown={false} toggleDropDown={toggleRuneLevelDD2}/>
@@ -644,7 +685,9 @@ const PetInfoDisplay: React.FC<PetInfoDisplayProps> = (props): JSX.Element => {
                 <div className={showRuneDropDown3 ? "pet-info-row-rune active" : "pet-info-row-rune"}
                      onClick={(): void => toggleRuneDropDown3()}
                 >
-                    <div className={"dropdown-selected"}>{selectedData.rune3.name}</div>
+                    <div className={"dropdown-selected"}>{selectedData.rune3.name}{!showDropDown ?
+                        <IoMdArrowDropdown size={26} className={"float-right"}/> :
+                        <IoMdArrowDropup size={26} className={"float-right"}/>}</div>
                     {showRuneDropDown3 && (
                         <RuneDropDown runes={getRunes()} showDropDown={false}
                                       toggleDropDown={(): void => toggleRuneDropDown3()}
@@ -654,7 +697,9 @@ const PetInfoDisplay: React.FC<PetInfoDisplayProps> = (props): JSX.Element => {
                 <div className={showRuneLevelDD3 ? "pet-info-row-lvl active" : "pet-info-row-rune"}
                      onClick={(): void => toggleRuneLevelDD3()}
                 >
-                    <div className={"dropdown-selected"}>{selectedData.rune3Level.name}</div>
+                    <div className={"dropdown-selected"}>{selectedData.rune3Level.name}{!showDropDown ?
+                        <IoMdArrowDropdown size={26} className={"float-right"}/> :
+                        <IoMdArrowDropup size={26} className={"float-right"}/>}</div>
                     {showRuneLevelDD3 && (
                         <RuneLevelDropDown runes={getNumerals()} runeSelection={rune3LevelSelection}
                                            showDropDown={false} toggleDropDown={toggleRuneLevelDD3}/>
