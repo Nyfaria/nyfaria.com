@@ -1,0 +1,627 @@
+{
+  "pets": [
+    {
+      "Name": "Artist Doggy",
+      "Damage": 1,
+      "Coins": 1.05,
+      "Tokens": 0,
+      "Shells": 0
+    },
+    {
+      "Name": "Royal Slime",
+      "Damage": 325,
+      "Coins": 75,
+      "Tokens": 0,
+      "Shells": 0
+    },
+    {
+      "Name": "Royal Doggy",
+      "Damage": 350,
+      "Coins": 100,
+      "Tokens": 0,
+      "Shells": 0
+    },
+    {
+      "Name": "Cyber Kitty",
+      "Damage": 450,
+      "Coins": 130,
+      "Tokens": 0,
+      "Shells": 0
+    },
+    {
+      "Name": "Kraken",
+      "Damage": 620,
+      "Coins": 225,
+      "Tokens": 0,
+      "Shells": 0
+    },
+    {
+      "Name": "Prototype DR4GON",
+      "Damage": 625,
+      "Coins": 220,
+      "Tokens": 0,
+      "Shells": 0
+    },
+    {
+      "Name": "Bongo Kitty",
+      "Damage": 700,
+      "Coins": 265,
+      "Tokens": 0,
+      "Shells": 0
+    },
+    {
+      "Name": "Classic Trio",
+      "Damage": 725,
+      "Coins": 350,
+      "Tokens": 0,
+      "Shells": 0
+    },
+    {
+      "Name": "Sea Champion",
+      "Damage": 750,
+      "Coins": 350,
+      "Tokens": 0,
+      "Shells": 0
+    },
+    {
+      "Name": "DOGGY1337",
+      "Damage": 750,
+      "Coins": 375,
+      "Tokens": 0,
+      "Shells": 0
+    },
+    {
+      "Name": "Lucky Clover",
+      "Damage": 800,
+      "Coins": 400,
+      "Tokens": 0,
+      "Shells": 0
+    },
+    {
+      "Name": "Pyramidium",
+      "Damage": 820,
+      "Coins": 375,
+      "Tokens": 0,
+      "Shells": 0
+    },
+    {
+      "Name": "Skeletal Dragon",
+      "Damage": 850,
+      "Coins": 400,
+      "Tokens": 0,
+      "Shells": 0
+    },
+    {
+      "Name": "Galactic Shard",
+      "Damage": 850,
+      "Coins": 425,
+      "Tokens": 325,
+      "Shells": 0
+    },
+    {
+      "Name": "The OwOlord",
+      "Damage": 1000,
+      "Coins": 500,
+      "Tokens": 0,
+      "Shells": 0
+    },
+    {
+      "Name": "Galactic Guard",
+      "Damage": 1250,
+      "Coins": 500,
+      "Tokens": 0,
+      "Shells": 0
+    },
+    {
+      "Name": "Vitual Pet",
+      "Damage": 1250,
+      "Coins": 0,
+      "Tokens": 500,
+      "Shells": 0
+    },
+    {
+      "Name": "Prisma",
+      "Damage": 1250,
+      "Coins": 425,
+      "Tokens": 500,
+      "Shells": 0
+    },
+    {
+      "Name": "Fallen Angel",
+      "Damage": 1350,
+      "Coins": 450,
+      "Tokens": 0,
+      "Shells": 0
+    },
+    {
+      "Name": "Hyperwave Kitty",
+      "Damage": 1400,
+      "Coins": 600,
+      "Tokens": 0,
+      "Shells": 0
+    },
+    {
+      "Name": "Dogcat",
+      "Damage": 1475,
+      "Coins": 0,
+      "Tokens": 550,
+      "Shells": 0
+    },
+    {
+      "Name": "Dark Shock",
+      "Damage": 1500,
+      "Coins": 400,
+      "Tokens": 550,
+      "Shells": 0
+    },
+    {
+      "Name": "Holy Shock",
+      "Damage": 1500,
+      "Coins": 400,
+      "Tokens": 550,
+      "Shells": 0
+    },
+    {
+      "Name": "King of Bruh",
+      "Damage": 1500,
+      "Coins": 400,
+      "Tokens": 550,
+      "Shells": 0
+    },
+    {
+      "Name": "Pot O' Gold",
+      "Damage": 1550,
+      "Coins": 500,
+      "Tokens": 0,
+      "Shells": 0
+    },
+    {
+      "Name": "Soul Heart",
+      "Damage": 1600,
+      "Coins": 520,
+      "Tokens": 0,
+      "Shells": 0
+    },
+    {
+      "Name": "Universe Sentinel",
+      "Damage": 1650,
+      "Coins": 500,
+      "Tokens": 0,
+      "Shells": 0
+    },
+    {
+      "Name": "Tophat(A)",
+      "Damage": 1750,
+      "Coins": 0,
+      "Tokens": 600,
+      "Shells": 0
+    },
+    {
+      "Name": "Tophat(B)",
+      "Damage": 1750,
+      "Coins": 0,
+      "Tokens": 600,
+      "Shells": 0
+    },
+    {
+      "Name": "Tophat(C)",
+      "Damage": 1750,
+      "Coins": 0,
+      "Tokens": 600,
+      "Shells": 0
+    },
+    {
+      "Name": "Tophat(D)",
+      "Damage": 1750,
+      "Coins": 0,
+      "Tokens": 600,
+      "Shells": 0
+    },
+    {
+      "Name": "Tophat(E)",
+      "Damage": 1750,
+      "Coins": 0,
+      "Tokens": 600,
+      "Shells": 0
+    },
+    {
+      "Name": "Tophat(F)",
+      "Damage": 1750,
+      "Coins": 0,
+      "Tokens": 600,
+      "Shells": 0
+    },
+    {
+      "Name": "Tophat(G)",
+      "Damage": 1750,
+      "Coins": 0,
+      "Tokens": 600,
+      "Shells": 0
+    },
+    {
+      "Name": "Tophat(H)",
+      "Damage": 1750,
+      "Coins": 0,
+      "Tokens": 600,
+      "Shells": 0
+    },
+    {
+      "Name": "Dark Defender",
+      "Damage": 1800,
+      "Coins": 450,
+      "Tokens": 625,
+      "Shells": 0
+    },
+    {
+      "Name": "Big Bruh",
+      "Damage": 1850,
+      "Coins": 525,
+      "Tokens": 0,
+      "Shells": 0
+    },
+    {
+      "Name": "Queen Jelly",
+      "Damage": 1850,
+      "Coins": 525,
+      "Tokens": 0,
+      "Shells": 0
+    },
+    {
+      "Name": "Egg Charm",
+      "Damage": 1850,
+      "Coins": 480,
+      "Tokens": 675,
+      "Shells": 0
+    },
+    {
+      "Name": "Seaside Dogcat",
+      "Damage": 1900,
+      "Coins": 500,
+      "Tokens": 0,
+      "Shells": 720
+    },
+    {
+      "Name": "Royal Fishbowl",
+      "Damage": 1950,
+      "Coins": 520,
+      "Tokens": 740,
+      "Shells": 0
+    },
+    {
+      "Name": "Shadow Keeper",
+      "Damage": 1980,
+      "Coins": 580,
+      "Tokens": 770,
+      "Shells": 0
+    },
+    {
+      "Name": "Neon Robot",
+      "Damage": 2000,
+      "Coins": 650,
+      "Tokens": 0,
+      "Shells": 0
+    },
+    {
+      "Name": "Royal Pearl",
+      "Damage": 2000,
+      "Coins": 540,
+      "Tokens": 760,
+      "Shells": 0
+    },
+    {
+      "Name": "Trophy",
+      "Damage": 2000,
+      "Coins": 0,
+      "Tokens": 1000,
+      "Shells": 0
+    },
+    {
+      "Name": "Mecha Kraken",
+      "Damage": 2100,
+      "Coins": 580,
+      "Tokens": 780,
+      "Shells": 0
+    },
+    {
+      "Name": "Queen Slime",
+      "Damage": 2100,
+      "Coins": 580,
+      "Tokens": 780,
+      "Shells": 0
+    },
+    {
+      "Name": "Demonic Eel",
+      "Damage": 2100,
+      "Coins": 580,
+      "Tokens": 780,
+      "Shells": 0
+    },
+    {
+      "Name": "Electric Eel",
+      "Damage": 2100,
+      "Coins": 580,
+      "Tokens": 780,
+      "Shells": 0
+    },
+    {
+      "Name": "Royal Eel",
+      "Damage": 2100,
+      "Coins": 580,
+      "Tokens": 780,
+      "Shells": 0
+    },
+    {
+      "Name": "Sunken Eel",
+      "Damage": 2100,
+      "Coins": 580,
+      "Tokens": 780,
+      "Shells": 0
+    },
+    {
+      "Name": "Dark Lord",
+      "Damage": 2150,
+      "Coins": 600,
+      "Tokens": 800,
+      "Shells": 0
+    },
+    {
+      "Name": "Holy Dogcat",
+      "Damage": 2150,
+      "Coins": 600,
+      "Tokens": 800,
+      "Shells": 0
+    },
+    {
+      "Name": "King's Soul",
+      "Damage": 2150,
+      "Coins": 600,
+      "Tokens": 800,
+      "Shells": 0
+    },
+    {
+      "Name": "Mirror Gem",
+      "Damage": 2200,
+      "Coins": 1200,
+      "Tokens": 0,
+      "Shells": 1600
+    },
+    {
+      "Name": "Pearl Goddess",
+      "Damage": 2200,
+      "Coins": 630,
+      "Tokens": 820,
+      "Shells": 0
+    },
+    {
+      "Name": "The Prophet",
+      "Damage": 2250,
+      "Coins": 700,
+      "Tokens": 0,
+      "Shells": 0
+    },
+    {
+      "Name": "Axolotl Baggy",
+      "Damage": 2275,
+      "Coins": 620,
+      "Tokens": 0,
+      "Shells": 840
+    },
+    {
+      "Name": "Serene Wave",
+      "Damage": 2275,
+      "Coins": 620,
+      "Tokens": 0,
+      "Shells": 840
+    },
+    {
+      "Name": "Armageddon",
+      "Damage": 2300,
+      "Coins": 660,
+      "Tokens": 0,
+      "Shells": 840
+    },
+    {
+      "Name": "Bermuda Triangle",
+      "Damage": 2300,
+      "Coins": 650,
+      "Tokens": 870,
+      "Shells": 0
+    },
+    {
+      "Name": "Captain's Curse",
+      "Damage": 2350,
+      "Coins": 670,
+      "Tokens": 880,
+      "Shells": 0
+    },
+    {
+      "Name": "Godly Gem",
+      "Damage": 2350,
+      "Coins": 725,
+      "Tokens": 0,
+      "Shells": 0
+    },
+    {
+      "Name": "NULLVoid",
+      "Damage": 2400,
+      "Coins": 0,
+      "Tokens": 850,
+      "Shells": 0
+    },
+    {
+      "Name": "Bot In The Box",
+      "Damage": 2400,
+      "Coins": 700,
+      "Tokens": 0,
+      "Shells": 880
+    },
+    {
+      "Name": "Sunset Savior",
+      "Damage": 2400,
+      "Coins": 700,
+      "Tokens": 880,
+      "Shells": 0
+    },
+    {
+      "Name": "Easter Basket",
+      "Damage": 2500,
+      "Coins": 780,
+      "Tokens": 930,
+      "Shells": 0
+    },
+    {
+      "Name": "Immortal One",
+      "Damage": 2500,
+      "Coins": 725,
+      "Tokens": 0,
+      "Shells": 0
+    },
+    {
+      "Name": "Cthulhu",
+      "Damage": 2600,
+      "Coins": 770,
+      "Tokens": 950,
+      "Shells": 0
+    },
+    {
+      "Name": "Venom Moth",
+      "Damage": 2600,
+      "Coins": 770,
+      "Tokens": 950,
+      "Shells": 0
+    },
+    {
+      "Name": "Silly Doggy :)",
+      "Damage": 2600,
+      "Coins": 780,
+      "Tokens": 0,
+      "Shells": 0
+    },
+    {
+      "Name": "Dark Pyramidium",
+      "Damage": 2700,
+      "Coins": 700,
+      "Tokens": 920,
+      "Shells": 0
+    },
+    {
+      "Name": "King Leviathan",
+      "Damage": 2700,
+      "Coins": 700,
+      "Tokens": 920,
+      "Shells": 0
+    },
+    {
+      "Name": "Radiant One",
+      "Damage": 2700,
+      "Coins": 700,
+      "Tokens": 920,
+      "Shells": 0
+    },
+    {
+      "Name": "Capybara Plushie",
+      "Damage": 2700,
+      "Coins": 700,
+      "Tokens": 0,
+      "Shells": 920
+    },
+    {
+      "Name": "Doggy Plushie",
+      "Damage": 2700,
+      "Coins": 700,
+      "Tokens": 0,
+      "Shells": 920
+    },
+    {
+      "Name": "Dragon Plushie",
+      "Damage": 2700,
+      "Coins": 700,
+      "Tokens": 0,
+      "Shells": 920
+    },
+    {
+      "Name": "Ethereal One",
+      "Damage": 2700,
+      "Coins": 700,
+      "Tokens": 920,
+      "Shells": 0
+    },
+    {
+      "Name": "Kitty Plushie",
+      "Damage": 2700,
+      "Coins": 700,
+      "Tokens": 0,
+      "Shells": 920
+    },
+    {
+      "Name": "Submarine Robot (BRUH)",
+      "Damage": 2800,
+      "Coins": 850,
+      "Tokens": 1000,
+      "Shells": 0
+    },
+    {
+      "Name": "Submarine Robot (Cyber)",
+      "Damage": 2800,
+      "Coins": 850,
+      "Tokens": 1000,
+      "Shells": 0
+    },
+    {
+      "Name": "Submarine Robot (Doggy)",
+      "Damage": 2800,
+      "Coins": 850,
+      "Tokens": 1000,
+      "Shells": 0
+    },
+    {
+      "Name": "Submarine Robot (Kitty)",
+      "Damage": 2800,
+      "Coins": 850,
+      "Tokens": 1000,
+      "Shells": 0
+    },
+    {
+      "Name": "Deep Dark Guardian",
+      "Damage": 3000,
+      "Coins": 900,
+      "Tokens": 1100,
+      "Shells": 0
+    },
+    {
+      "Name": "Robot 2.0",
+      "Damage": 3250,
+      "Coins": 100,
+      "Tokens": 0,
+      "Shells": 1250
+    },
+    {
+      "Name": "The Elder",
+      "Damage": 3250,
+      "Coins": 1000,
+      "Tokens": 0,
+      "Shells": 1250
+    },
+    {
+      "Name": "Leviathan",
+      "Damage": 3500,
+      "Coins": 850,
+      "Tokens": 0,
+      "Shells": 0
+    },
+    {
+      "Name": "Lord Shock",
+      "Damage": 3500,
+      "Coins": 1100,
+      "Tokens": 1450,
+      "Shells": 0
+    },
+    {
+      "Name": "Beach Boi",
+      "Damage": 3750,
+      "Coins": 1250,
+      "Tokens": 0,
+      "Shells": 1600
+    }
+  ]
+}

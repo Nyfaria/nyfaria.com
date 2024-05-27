@@ -9,6 +9,7 @@ import {useSideBarState, SideBarStateInterface} from "./SidebarStateProvider";
 import Image from "next/image";
 import Link from "next/link";
 import {useRouter} from "next/navigation";
+import {LuDog} from "react-icons/lu";
 
 
 
@@ -32,7 +33,8 @@ const SideBar=() => {
     return (
         <div className="App">
             <div className={state.collapsed ? "sidebar-open" : "collapsed"}>
-                <Image unoptimized className={"sidebar-logo"} src={"/images/icon.png"} width={100}height={100} alt="logo"/>
+                <Image unoptimized className={"sidebar-logo"} src={"/images/icon.png"} width={100} height={100}
+                       alt="logo"/>
                 <div className={"sidebar-title"}>Modding with Nyfaria</div>
                 <div className={"line-1"}></div>
                 <div className={"sidebar-option"}
@@ -69,23 +71,27 @@ const SideBar=() => {
                          id={"sidebar-tutorials"}> Team Projects
                     </div>
                 </div>
+                <div className={"sidebar-option"}
+                     onClick={() => router.push("/petcatchers")}>
+                    <LuDog />Pet Catchers
+                </div>
                 <div className={"socials"}>
                     <a className={"link"} target={"_blank"} href={"https://discord.gg/WbNYM68Bkt"}>
                         <Image unoptimized className={"social"} id={"discord"}
                                width={40} height={40}
-                             src={'/images/discord_icon.png'} alt={"discord"}/>
+                               src={'/images/discord_icon.png'} alt={"discord"}/>
                     </a>
 
                     <a className="link" target="_blank" href="https://twitter.com/TheNyfaria">
                         <Image unoptimized className="social" id="twitter" alt={"twitter"}
                                width={40} height={40}
-                             src={"/images/twitter_icon.png"}/>
+                               src={"/images/twitter_icon.png"}/>
                     </a>
 
                     <a className="link" target="_blank" href="https://github.com/Nyfaria">
                         <Image unoptimized className="social" id="github" alt={"github"}
                                width={40} height={40}
-                             src={"/images/github_icon.png"}/>
+                               src={"/images/github_icon.png"}/>
                     </a>
                 </div>
             </div>

@@ -4,6 +4,7 @@ import "./globals.css";
 import SideBar from "@/app/components/SideBar";
 import React from "react";
 import {SideBarStateProvider} from "@/app/components/SidebarStateProvider";
+import {PetInfoStateProvider} from "@/app/petcatchers/components/PetInfoStateProvider";
 
 const inter = Inter({subsets: ["latin"]});
 
@@ -21,7 +22,9 @@ export default function RootLayout({
         <html lang="en">
         <body className={inter.className}>
         <SideBarStateProvider>
-            {children}
+            <PetInfoStateProvider>
+                {children}
+            </PetInfoStateProvider>
             <SideBar/>
         </SideBarStateProvider>
         </body>

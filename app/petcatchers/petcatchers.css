@@ -1,0 +1,114 @@
+.pet-info-bar {
+    width: 70vw;
+    background-color: darkorchid;
+    border: 1px solid white;
+    border-collapse: collapse;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+    display: grid;
+    grid-template-columns: 5% 4% 22% 8% 3% 8% 3% 8% 3% 9% 9% 9% 9%;
+    text-align: center;
+}
+.pet-info-lvl{
+    float: left;
+    border: inherit;
+}
+.pet-info-row-lvl{
+    float: left;
+    border: inherit;
+}
+.pet-info-row {
+    width: 70vw;
+    background-color: darkslategray;
+    border: 1px solid white;
+    border-collapse: collapse;
+    display: grid;
+    grid-template-columns: 5% 4% 22% 8% 3% 8% 3% 8% 3% 9% 9% 9% 9%;
+    text-align: center;
+}
+
+.pet-info-pet {
+    float: left;
+    border: inherit;
+}
+.pet-info-damage {
+    float: left;
+    border: inherit;
+}
+.pet-info-rune {
+    float: left;
+    border: inherit;
+}
+.pet-info-row-rune {
+    float: left;
+    cursor: pointer;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+    border: inherit;
+}
+.pet-info-shiny{
+    float: left;
+    border: inherit;
+}
+.pet-info-row-shiny{
+    float: left;
+    border: inherit;
+}
+.pet-info-coins {
+    float: left;
+    border: inherit;
+}
+.pet-info-tokens {
+    float: left;
+    border: inherit;
+}
+.pet-info-shells {
+    float: left;
+    border: inherit;
+}
+.pet-info-display{
+    font-size: 2vh;
+    display: grid;
+    grid-template-columns: 100%;
+    padding-top: 1vh;
+    border: inherit;
+}
+.petselector {
+    /*background-color: blue;*/
+    cursor: pointer;
+    float: left;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+    user-select: none; /* Standard */
+}
+.dropdown {
+    position: absolute;
+    height: 20vh;
+    overflow-y: scroll;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.dropdown-selection {
+    margin: auto;
+    width: 100%;
+    background-color: darkslategray;
+    cursor: pointer;
+}
+.dropdown-selected {
+    cursor: pointer;
+}
+
+.dropdown-selection:hover {
+    background-color: gray;
+}
+.pet-info-row-damage {
+    float: left;
+    border: inherit;
+}
